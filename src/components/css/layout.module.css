@@ -89,25 +89,6 @@ a.button:hover{
     height: 6rem;
 }
 
-/* page links styles */
-.pagelinks{
-    display:flex;
-    justify-content: space-between;
-    padding: 2rem;
-    align-items: center;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    background-color: var(--c2);
-    z-index: 10;
-}
-
-.innerlinks{
-    display: flex;
-    gap: 3rem;
-}
-
 /* left section styles */
 .leftsection ul{
     display: flex;
