@@ -1,7 +1,5 @@
 import * as React from 'react'
-import { Link, useStaticQuery, graphql } from 'gatsby'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import '../utils/font-awesome'
+import { useStaticQuery, graphql } from 'gatsby'
 import * as PageStyles from './css/layout.module.css'
 // import { StaticImage } from 'gatsby-plugin-image'
 import Nav from './nav'; 
