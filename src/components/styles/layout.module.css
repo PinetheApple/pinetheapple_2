@@ -54,6 +54,20 @@ a.button:hover{
     transform: rotate(-90deg);
 }
 
+/* page links styles */
+.pagelinks{
+    display:flex;
+    justify-content: space-between;
+    padding: 2rem;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: var(--c2);
+    z-index: 10;
+}
+
 /* hero section styles */
 .hero{
     height: 90vh;

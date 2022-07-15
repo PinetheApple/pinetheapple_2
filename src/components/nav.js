@@ -1,21 +1,22 @@
 import * as React from 'react'
-import {
-    Link, 
-    // StaticImage
-} from 'gatsby'
-import {pagelinks, innerlinks, button} from './styles/nav.module.css'
+import { Link } from 'gatsby'
+import {innerlinks, button, dropdown, bars} from './styles/nav.module.css'
 
-export default function Nav({image}){
+export default function Nav(){
     return (
-        <nav class={pagelinks}>
-            <div>{image}</div>
-            <ul class={innerlinks}>
+        <>
+            <ul className={innerlinks}>
                 <li><Link to='/about'>About</Link></li>
                 <li><Link to='/about#experience'>Experience</Link></li>
                 <li><Link to='/#projects'>Projects</Link></li>
                 <li><Link to='/#contact'>Contact</Link></li>
-                <li><a href='/' class={button}>Resume</a></li>
+                <li><a href='/' className={button}>Resume</a></li>
             </ul>
-        </nav>
+            <div className={dropdown}>
+                <div className={bars}></div>
+                <div className={bars}></div>
+                <div className={bars}></div>
+            </div>
+        </>
     )
 }

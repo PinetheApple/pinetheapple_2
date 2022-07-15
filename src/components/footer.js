@@ -6,7 +6,7 @@ import {connections, details} from './styles/layout.module.css'
 export default function Footer(){
     return(
         <footer>
-        <section class={connections}>
+        <section className={connections}>
           <a href="https://www.discord.gg/rqVKvVe" rel="noopener">
             <FontAwesomeIcon icon={['fab', 'discord']} size='xl' title='discord server link'/>
           </a>
@@ -21,7 +21,7 @@ export default function Footer(){
           </a>
         </section>
 
-        <section class={details}>
+        <section className={details}>
           <p><a href="https://github.com/PinetheApple/pinetheapple_2" rel="noopener">
             <FontAwesomeIcon icon={'code-fork'}  title='codefork' size='sm'/> Github repository</a>
           </p>

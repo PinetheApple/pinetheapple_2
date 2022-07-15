@@ -5,7 +5,7 @@ import '../utils/font-awesome'
 
 const  LeftSection =() => {
     return (
-        <nav class={leftsection}>
+        <nav className={leftsection}>
             <ul>
                 <li><a href="https://www.discord.gg/rqVKvVe" rel="noopener">
                     <FontAwesomeIcon icon={['fab', 'discord']} size='xl' title='discord server link'/>
@@ -16,7 +16,7 @@ const  LeftSection =() => {
                 <li><a href="https://codepen.io/pinetheapple" rel="noopener">
                     <FontAwesomeIcon icon={['fab', 'codepen']} size='xl' title='codepen profile link' />
                 </a></li>
-                <li><div class={line}></div></li>
+                <li><div className={line}></div></li>
             </ul>
       </nav>
     )
@@ -24,9 +24,9 @@ const  LeftSection =() => {
 
 const RightSection = () => {
     return (
-        <div class={rightsection}>
-            <p class={rotate90}><a href="mailto:pinespace889@gmail.com">pinespace889@gmail.com</a></p>
-            <div class={line}></div>
+        <div className={rightsection}>
+            <p className={rotate90}><a href="mailto:pinespace889@gmail.com">pinespace889@gmail.com</a></p>
+            <div className={line}></div>
       </div>
     )
 }

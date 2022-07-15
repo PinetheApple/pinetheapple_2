@@ -4,7 +4,10 @@ import { Seo } from './seo'
 
 // styling
 import '../components/styles/global.css'
-import * as PageStyles from './styles/layout.module.css'
+import {
+  container,
+  pagelinks
+} from './styles/layout.module.css'
 import { StaticImage } from 'gatsby-plugin-image'
 import Nav from './nav'; 
 import SideSections from './sidesections'
@@ -33,8 +36,11 @@ const Layout = ({
   return (
     <>
       <Seo title={title} description={description} image={image} path={path} />
-      <div class={PageStyles.container}>
-        <Nav> <Link to='/'><StaticImage alt="Logo" src="../images/logo.svg"/></Link> </Nav>
+      <div className={container}>
+        <nav className={pagelinks}>
+          <Link to='/'><StaticImage alt="Logo" src="../images/logo.svg"/></Link>
+          <Nav />
+        </nav>
         <SideSections />
         <main>
           {children}
