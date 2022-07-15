@@ -25,7 +25,7 @@ const  LeftSection =() => {
 const RightSection = () => {
     return (
         <div class={rightsection}>
-            <p class={rotate90}><a href="mailto:">pinespace889@gmail.com</a></p>
+            <p class={rotate90}><a href="mailto:pinespace889@gmail.com">pinespace889@gmail.com</a></p>
             <div class={line}></div>
       </div>
     )
