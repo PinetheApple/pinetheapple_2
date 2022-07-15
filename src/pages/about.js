@@ -3,7 +3,7 @@ import Layout from '../components/layout'
 
 const AboutPage = () => {
   return (
-    <Layout pageTitle="About Page">
+    <Layout title="About Page" description='more info about this site'>
       <p>Hi there! I'm the proud creator of this site, which I built with Gatsby.</p>
     </Layout>
   )

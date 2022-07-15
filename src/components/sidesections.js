@@ -1,9 +1,9 @@
 import * as React from 'react'
-import {leftsection, line} from './css/layout.module.css'
+import {leftsection, line, rightsection, rotate90} from './css/layout.module.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import '../utils/font-awesome'
 
-export default function LeftSection(){
+const  LeftSection =() => {
     return (
         <nav class={leftsection}>
             <ul>
@@ -19,5 +19,23 @@ export default function LeftSection(){
                 <li><div class={line}></div></li>
             </ul>
       </nav>
+    )
+}
+
+const RightSection = () => {
+    return (
+        <div class={rightsection}>
+            <p class={rotate90}><a href="mailto:">pinespace889@gmail.com</a></p>
+            <div class={line}></div>
+      </div>
+    )
+}
+
+export default function SideSections(){
+    return (
+        <>
+            <LeftSection />
+            <RightSection />
+        </>
     )
 }

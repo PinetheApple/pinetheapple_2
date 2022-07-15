@@ -5,11 +5,10 @@ import {
 } from 'gatsby'
 import {pagelinks, innerlinks, button} from './css/nav.module.css'
 
-export default function Nav(){
+export default function Nav({image}){
     return (
         <nav class={pagelinks}>
-            {/* <Link to='/'><StaticImage alt="Logo" src="../images/logo.svg"/></Link> */}
-            <div></div>
+            <div>{image}</div>
             <ul class={innerlinks}>
                 <li><Link to='/about'>About</Link></li>
                 <li><Link to='/about#experience'>Experience</Link></li>

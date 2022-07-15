@@ -14,7 +14,7 @@ import '../utils/font-awesome'
 
 const IndexPage = () => {
   return (
-    <Layout pageTitle={"Home Page"}>
+    <Layout title="Home Page" description="index page">
       <h1>WIP</h1>
     </Layout>
   )

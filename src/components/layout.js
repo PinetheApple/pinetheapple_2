@@ -1,13 +1,19 @@
 import * as React from 'react'
-import { useStaticQuery, graphql } from 'gatsby'
+import { useStaticQuery, graphql, Link } from 'gatsby'
 import * as PageStyles from './css/layout.module.css'
-// import { StaticImage } from 'gatsby-plugin-image'
+import { StaticImage } from 'gatsby-plugin-image'
 import Nav from './nav'; 
-import LeftSection from './leftsection'
-import RightSection from './rightsection'
+import SideSections from './sidesections'
 import Footer from './footer'
+import { Seo } from './seo'
 
-const Layout = ({ pageTitle, children }) => {
+const Layout = ({ 
+  children,
+  title=false,
+  description=false,
+  image=false,
+  path=false
+ }) => {
   const data = useStaticQuery(graphql`
     query {
       site {
@@ -18,17 +24,20 @@ const Layout = ({ pageTitle, children }) => {
     }
   `)
 
+  const meta=data?.site?.siteMetadata 
+
   return (
-    <div class={PageStyles.container}>
-      <title>{pageTitle} | {data.site.siteMetadata.title}</title>
-      <Nav />
-      <LeftSection />
-      <RightSection />
-      <main>
-        {children}
-      </main>
-      <Footer />
-    </div>
+    <>
+      <Seo title={title} description={description} image={image} path={path} />
+      <div class={PageStyles.container}>
+        <Nav> <Link to='/'><StaticImage alt="Logo" src="../images/logo.svg"/></Link> </Nav>
+        <SideSections />
+        <main>
+          {children}
+        </main>
+        <Footer />
+      </div>
+    </>
   )
 }
 

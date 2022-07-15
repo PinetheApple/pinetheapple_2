@@ -21,5 +21,6 @@ module.exports = {
         icon: './src/images/favicon_porg.png',
       },
     },
+    'gatsby-plugin-react-helmet'
   ],
 };
