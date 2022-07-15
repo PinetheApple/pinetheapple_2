@@ -8,7 +8,8 @@
     --c4: #B0BCBF;
     --c5: #348990;
     --f1: 'Arvo', serif;
-    --f2: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+    --f2: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-display: swap;
 }
 
 *{
