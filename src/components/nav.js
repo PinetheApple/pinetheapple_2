@@ -3,7 +3,7 @@ import {
     Link, 
     // StaticImage
 } from 'gatsby'
-import {pagelinks, innerlinks, button} from './css/nav.module.css'
+import {pagelinks, innerlinks, button} from './styles/nav.module.css'
 
 export default function Nav({image}){
     return (

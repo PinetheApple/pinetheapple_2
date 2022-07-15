@@ -1,5 +1,5 @@
 import * as React from 'react'
-import {leftsection, line, rightsection, rotate90} from './css/layout.module.css'
+import {leftsection, line, rightsection, rotate90} from './styles/layout.module.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import '../utils/font-awesome'
 

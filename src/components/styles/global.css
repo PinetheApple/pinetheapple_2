@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo&display=swap');
+
+:root{
+    --c0: #80898C;
+    --c1: #383E40;
+    --c2: #0D0D0D;
+    --c3: #E9F1F2;
+    --c4: #B0BCBF;
+    --c5: #348990;
+    --f1: 'Arvo', serif;
+    --f2: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+*{
+    box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+ 
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px var(--c4);
+    border-radius: 20px;
+}
+ 
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    box-shadow: inset 0 0 6px var(--c4);
+    background-color: var(--c3);
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background: var(--c2);
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color:var(--c0);
+    transition: all 0.5s;
+}
+a:hover{
+    color: var(--c5);
+    text-decoration: underline;
+}
+
+a i:hover{
+    color: var(--c5);
+}
+
+i{
+    color: var(--c4);
+    padding: 1rem 0.5rem;
+}
+
+/* main div styles */
+main, footer{
+    padding: 2rem;
+    margin: 5rem auto;
+    width: 85%;
+}
+
+/* footer styles */
+footer{
+    margin-bottom: 0;
+}
+
+h1{
+    font-size: 6rem;
+    margin-top: 15rem;
+    margin-bottom: -1rem;
+    font-family: var(--f2);
+    color: var(--c5);
+}
+
+h2{
+    margin: 5rem auto 2rem;
+    text-align: center;
+    font-size: 3rem;
+    position: relative;
+    color: var(--c5);
+}
+
+h2::before, h2::after{
+    display: block;
+    content: " ";
+    width: 10rem;
+    height: 0.1rem;
+    background-color: var(--c4);
+    position: absolute;
+    top: 2rem;
+}
+
+h2::before{
+    left: 20rem;
+}
+
+h2::after{
+    right: 20rem;
+}

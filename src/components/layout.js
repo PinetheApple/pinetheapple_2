@@ -1,11 +1,15 @@
 import * as React from 'react'
 import { useStaticQuery, graphql, Link } from 'gatsby'
-import * as PageStyles from './css/layout.module.css'
+import { Seo } from './seo'
+
+// styling
+import '../components/styles/global.css'
+import * as PageStyles from './styles/layout.module.css'
 import { StaticImage } from 'gatsby-plugin-image'
 import Nav from './nav'; 
 import SideSections from './sidesections'
 import Footer from './footer'
-import { Seo } from './seo'
+
 
 const Layout = ({ 
   children,
