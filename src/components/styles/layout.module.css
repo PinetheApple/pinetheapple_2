@@ -36,7 +36,7 @@ a.button:hover{
     align-items: center;
     position: fixed;
     bottom: -0.93rem;
-    left: 2rem;
+    left: 2.5%;
 }
 
 /* right section styles */
@@ -47,7 +47,7 @@ a.button:hover{
     align-items: center;
     position: fixed;
     bottom: 0;
-    right: 1rem;
+    right: 0;
 }
 
 .rotate90{
@@ -124,4 +124,19 @@ a.button:hover{
 
 .details p{
     margin: 0 auto;
+}
+
+/* media queries */
+@media (max-width: 1024px)
+{
+    .rightsection{
+        right: -1rem;
+    }
+}
+
+@media (max-width: 850px)
+{
+    .rightsection, .leftsection{
+        display: none;
+    }
 }

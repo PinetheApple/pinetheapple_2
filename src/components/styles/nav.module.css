@@ -33,3 +33,10 @@ a.button:hover{
     display: flex;
     gap: 3rem;
 }
+
+/* media queries */
+@media (max-width: 850px){
+    .innerlinks{
+        display: none;
+    }
+}
