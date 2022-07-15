@@ -9,11 +9,11 @@
     --c5: #348990;
     --f1: 'Arvo', serif;
     --f2: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-display: swap;
 }
 
 *{
     box-sizing: border-box;
+    font-display: swap;
 }
 
 ::-webkit-scrollbar {
