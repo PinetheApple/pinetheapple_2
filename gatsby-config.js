@@ -16,12 +16,6 @@ module.exports = {
       }
     },
     {
-      resolve: 'gatsby-plugin-load-script',
-      options: {
-        src: '/script.js', 
-      },
-    },
-    {
       resolve: 'gatsby-plugin-manifest',
       options: {
         icon: './src/images/favicon_porg.png',
