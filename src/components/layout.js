@@ -12,6 +12,7 @@ import { StaticImage } from 'gatsby-plugin-image'
 import Nav from './nav'; 
 import SideSections from './sidesections'
 import Footer from './footer'
+import { Helmet } from 'react-helmet'
 
 
 const Layout = ({ 
@@ -35,7 +36,7 @@ const Layout = ({
 
   return (
     <>
-      <Seo title={title} description={description} image={image} path={path} />
+      <Seo title={title || meta.title} description={description} image={image} path={path} />
       <div className={container}>
         <nav className={pagelinks}>
           <Link to='/'><StaticImage alt="Logo" src="../images/logo.svg"/></Link>
