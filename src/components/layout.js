@@ -12,7 +12,6 @@ import { StaticImage } from 'gatsby-plugin-image'
 import Nav from './nav'; 
 import SideSections from './sidesections'
 import Footer from './footer'
-// import { Helmet } from 'react-helmet'
 
 
 const Layout = ({ 

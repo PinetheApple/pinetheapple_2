@@ -15,31 +15,45 @@ a.button:hover{
     text-decoration: none;
 }
 
-.innerlinks{
+.closed{
     display: flex;
     gap: 3rem;
-}
+}/* this is open when the screen is wider than 850px */
 
-.dropdown{
+
+.toggle_icon{
     display: none;
 }
 
-.bars{
-    display: block;
-    width: 2rem;
-    height: 0.2rem;
-    background-color: var(--c0);
+.innerlinks{
+    display: none;
 }
 
 /* media queries */
 @media (max-width: 850px){
-    .innerlinks{
+    .closed{
         display: none;
+    }/* Now it is actually closed */
+
+    .toggle_icon{
+        display: block;
+        position: fixed;
+        top: 2.35rem;
+        right: 2.1rem;
     }
-    .dropdown{
-        display:flex;
+
+    .innerlinks{
+        height: 100vh;
+        display: flex;
         flex-direction: column;
-        padding: 1rem; 
-        gap: 0.5rem;
+        gap: 3rem;
+        align-items: center;
+        position: fixed;
+        top: 10vh;
+        left: 0;
+        right: 0;
+        background-color: inherit;
+        padding-top: 10vh;
+        padding-left: 0;
     }
 }
