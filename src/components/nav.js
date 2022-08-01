@@ -15,10 +15,10 @@ export default function Nav(){
     return (
         <>
             <ul className={toggle? innerlinks : closed}>
-                <li><Link to='/about'>About</Link></li>
-                <li><Link to='/about#experience'>Experience</Link></li>
-                <li><Link to='/#projects'>Projects</Link></li>
-                <li><Link to='/#contact'>Contact</Link></li>
+                <li><Link to='/about' >About</Link></li>
+                <li><Link to='/about#experience' onClick={handleToggle}>Experience</Link></li>
+                <li><Link to='/#projects' onClick={handleToggle}>Projects</Link></li>
+                <li><Link to='/#contact' onClick={handleToggle}>Contact</Link></li>
                 <li><a href='/' className={button}>Resume</a></li>
             </ul>
             <button style={{padding: '0', border: 'none', background: 'inherit'}} className={toggle_icon} onClick={handleToggle}>
