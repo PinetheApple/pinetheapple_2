@@ -2,7 +2,6 @@ import * as React from 'react'
 import Layout from '../components/layout'
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import '../utils/font-awesome'
-import '../images/favicon_porg'
 // import {
 //   hero, 
 //   projects,
@@ -15,7 +14,7 @@ import '../images/favicon_porg'
 
 const IndexPage = () => {
   return (
-    <Layout title="Home Page" description="index page" image='favicon_porg'>
+    <Layout title="Home Page" description="index page">
       <h1>Send help</h1>
     </Layout>
   )
