@@ -23,7 +23,7 @@ export default function Footer(){
 
         <section className={details}>
           <p><a href="https://github.com/PinetheApple/pinetheapple_2" rel="noopener">
-            <FontAwesomeIcon icon={'code-fork'}  title='codefork' size='sm'/> Github repository</a>
+            Github repository</a>
           </p>
           <small>Ⓒ Jonathan. No rights reserved.</small>
         </section>
