@@ -18,7 +18,7 @@ const Layout = ({
   children,
   title=false,
   description=false,
-  image=true,
+  image=false,
   path=false
  }) => {
   const data = useStaticQuery(graphql`
