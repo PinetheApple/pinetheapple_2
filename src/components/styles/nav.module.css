@@ -15,7 +15,7 @@ a.button:hover{
     text-decoration: none;
 }
 
-.closed, .innerlinks{
+.innerlinks{
     display: flex;
     gap: 3rem;
 }/* this is open when the screen is wider than 850px */
@@ -25,15 +25,10 @@ a.button:hover{
     display: none;
 }
 
-/* .innerlinks{
-    display: none;
-} */
-
 /* media queries */
 @media (max-width: 850px){
-    .closed{
+    .innerlinks{
         display: none;
-        transition: all 2s;
     }/* Now it is actually closed */
 
     .toggle_icon{
@@ -43,11 +38,10 @@ a.button:hover{
         right: 2.1rem;
     }
 
-    .innerlinks{
+    .innerlinks.expanded{
         height: 100vh;
         display: flex;
         flex-direction: column;
-        gap: 3rem;
         align-items: center;
         position: fixed;
         top: 10vh;
@@ -56,6 +50,5 @@ a.button:hover{
         background-color: inherit;
         padding-top: 10vh;
         padding-left: 0;
-        transition: all ease-in-out;
     }
 }

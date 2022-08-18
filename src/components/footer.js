@@ -27,6 +27,8 @@ export default function Footer(){
           </p>
           <small>Ⓒ Jonathan. No rights reserved.</small>
         </section>
+
+        <h3>need to fix nav scrolling + add content</h3>
       </footer>
     )
 }
