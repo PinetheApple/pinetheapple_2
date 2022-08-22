@@ -28,7 +28,7 @@ export default function Footer(){
           <small>Ⓒ Jonathan. No rights reserved.</small>
         </section>
 
-        <h3>need to fix nav scrolling + add content</h3>
+        <h3>need to fix nav scrolling + add content + make site responsive</h3>
       </footer>
     )
 }
