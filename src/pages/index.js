@@ -16,9 +16,9 @@ const IndexPage = () => {
   return (
     <Layout title="Home Page" description="index page">
       <section className={hero}>
-                <h1>Jonathan Paul</h1>
-                <p>STUDENT<span>WEB DEVELOPER</span></p>
-            </section>
+            <h1>Jonathan Paul</h1>
+            <p>STUDENT<span>WEB DEVELOPER</span></p>
+        </section>
         <section>the nav links dont work properly :(</section>
             <section id="project">
                 <h2>Projects</h2>

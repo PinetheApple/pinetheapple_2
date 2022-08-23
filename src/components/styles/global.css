@@ -32,6 +32,7 @@ body{
     margin: 0;
     padding: 0;
     background: var(--c2);
+    color: var(--c3);
 }
 
 li{

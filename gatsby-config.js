@@ -22,6 +22,6 @@ module.exports = {
       },
     },
     'gatsby-plugin-react-helmet',
-    // 'gatsby-plugin-smoothscroll'
+    `gatsby-plugin-styled-components`
   ],
 };
