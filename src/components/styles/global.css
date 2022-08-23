@@ -5,12 +5,13 @@
     --c3: #E9F1F2;
     --c4: #B0BCBF;
     --c5: #348990;
-    --f1: 'courier new';
+    --f1: "ABeeZee", sans-serif; 
     --f2: 'monospace';
 }
 
 *{
     box-sizing: border-box;
+    font-family: var(--f1);
 }
 
 ::-webkit-scrollbar {
