@@ -19,7 +19,7 @@ const IndexPage = () => {
             <h1>Jonathan Paul</h1>
             <p>STUDENT<span>WEB DEVELOPER</span></p>
         </section>
-        <section>the nav links dont work properly :(</section>
+        <section>wip site </section>
             <section id="project">
                 <h2>Projects</h2>
                 <div className={projlist}>
