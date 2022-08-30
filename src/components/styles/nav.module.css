@@ -20,11 +20,6 @@ a.button:hover{
     gap: 3rem;
 }/* this is open when the screen is wider than 850px */
 
-
-.toggle_icon{
-    display: none;
-}
-
 .bar{
     display: block;
     width: 25px;

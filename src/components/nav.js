@@ -3,7 +3,6 @@ import { useState } from 'react'
 import { Link } from 'gatsby'
 import classNames from 'classnames'
 import {innerlinks, button, ham, active, bar} from './styles/nav.module.css'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import logo from '../images/logo.svg'
 import styled from "styled-components"
 
