@@ -34,14 +34,14 @@ export default function Nav(){
     return (
         <Pagelinks>
             <img src={logo} alt='logo'/>
-            <ul className={toggle? active_links : innerlinks} onClick={handleToggle}>
+            <ul className={toggle? active_links : innerlinks} onClick={handleToggle} role='navigation'>
                 <li><Link to='/about' >About</Link></li>
                 <li><Link to='/about#experience'>Experience</Link></li>
                 <li><Link to='/#projects'>Projects</Link></li>
                 <li><Link to='/#contact'>Contact</Link></li>
                 <li><a href='/' className={button}>Resume</a></li>
             </ul>
-            <div class={toggle? active_ham:ham} onClick={handleToggle}>
+            <div class={toggle? active_ham:ham} onClick={handleToggle} role='navigation'>
                 <span class={bar}></span>
                 <span class={bar}></span>
                 <span class={bar}></span>
