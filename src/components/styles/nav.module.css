@@ -25,30 +25,61 @@ a.button:hover{
     display: none;
 }
 
+.bar{
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: var(--c3);
+    transition: all 0.3s ease-in-out;
+    margin: 0.3rem auto;
+}
+
+.ham{
+    display: none;
+}
+
 /* media queries */
 @media (max-width: 850px){
-    .innerlinks{
-        display: none;
-    }/* Now it is actually closed */
-
-    .toggle_icon{
+    .ham{
         display: block;
-        position: fixed;
-        top: 2.35rem;
-        right: 2.1rem;
+        cursor: pointer;
     }
 
-    .innerlinks.expanded{
-        height: 100vh;
+    .innerlinks{
         display: flex;
         flex-direction: column;
-        align-items: center;
+        gap: 2rem;
+        text-align: center;
+        transition: 0.3s ease-in-out;
         position: fixed;
-        top: 10vh;
-        left: 0;
-        right: 0;
+        top: 4rem;
+        width: 100%;
+        left: 100vh;
         background-color: inherit;
-        padding-top: 10vh;
-        padding-left: 0;
+        padding: 10rem 0 25rem 0;
+    }/* Now it is actually hidden */
+
+    .innerlinks.active{
+        left: 0;
+    }
+
+    .ham.active .bar:nth-child(2){
+        display: none;
+    }
+
+    .ham.active .bar:nth-child(1){
+        transform: translateY(9px) rotate(45deg);
+    }
+
+    .ham.active .bar:nth-child(3){
+        transform: translateY(0) rotate(-45deg);
+    }
+
+    .button{
+        border: none;
+        padding: 0;
+        width: auto;
+        margin: 0 auto;
+        transition: none;
     }
 }
