@@ -1,14 +1,18 @@
 import * as React from 'react'
-import { useStaticQuery, graphql, Link } from 'gatsby'
+import { useStaticQuery, graphql } from 'gatsby'
 import { Seo } from './seo'
 
 // styling
+import styled from 'styled-components'
 import '../components/styles/global.css'
-import container from './styles/layout.module.css'
 import Nav from './nav'; 
 import SideSections from './sidesections'
 import Footer from './footer'
 
+const Container=styled.div`
+font-family: var(--f1);
+    color: var(--c3);
+`
 
 const Layout = ({ 
   children,
@@ -32,14 +36,14 @@ const Layout = ({
   return (
     <>
       <Seo title={title || meta.title} description={description} image={image} path={path} />
-      <div className={container}>
+      <Container>
         <Nav />
         <SideSections />
         <main>
           {children}
         </main>
         <Footer />
-      </div>
+      </Container>
     </>
   )
 }

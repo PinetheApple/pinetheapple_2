@@ -1,121 +1,158 @@
-:root{
-    --c0: #80898C;
-    --c1: #383E40;
-    --c2: #0D0D0D;
-    --c3: #E9F1F2;
-    --c4: #B0BCBF;
-    --c5: #348990;
-    --f1: "ABeeZee", sans-serif; 
-    --f2: 'monospace';
+:root {
+  --c0: #80898c;
+  --c1: #383e40;
+  --c2: #0d0d0d;
+  --c3: #e9f1f2;
+  --c4: #b0bcbf;
+  --c5: #348990;
+  --f1: "ABeeZee", sans-serif;
+  --f2: "monospace";
 }
 
-*{
-    box-sizing: border-box;
-    font-family: var(--f1);
+* {
+  box-sizing: border-box;
+  font-family: var(--f1);
 }
 
 ::-webkit-scrollbar {
-    width: 10px;
+  width: 10px;
 }
- 
+
 ::-webkit-scrollbar-track {
-    box-shadow: inset 0 0 6px var(--c4);
-    border-radius: 20px;
+  box-shadow: inset 0 0 6px var(--c4);
+  border-radius: 20px;
 }
- 
+
 ::-webkit-scrollbar-thumb {
-    border-radius: 10px;
-    box-shadow: inset 0 0 6px var(--c4);
-    background-color: var(--c3);
+  border-radius: 10px;
+  box-shadow: inset 0 0 6px var(--c4);
+  background-color: var(--c3);
 }
 
-body{
-    margin: 0;
-    padding: 0;
-    background: var(--c2);
-    color: var(--c3);
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--c2);
+  color: var(--c3);
 }
 
-li{
-    list-style: none;
+li {
+  list-style: none;
 }
 
-a{
-    text-decoration: none;
-    color:var(--c0);
-    transition: all 0.5s;
+a {
+  text-decoration: none;
+  color: var(--c0);
+  transition: all 0.5s;
 }
-a:hover{
-    color: var(--c5);
-    text-decoration: underline;
-}
-
-a i:hover{
-    color: var(--c5);
+a:hover {
+  color: var(--c5);
+  text-decoration: underline;
 }
 
-i{
-    color: var(--c4);
-    padding: 1rem 0.5rem;
+a i:hover {
+  color: var(--c5);
+}
+
+i {
+  color: var(--c4);
+  padding: 1rem 0.5rem;
 }
 
 /* main div styles */
-main, footer{
-    padding: 2rem;
-    margin: 5rem auto;
-    width: 85%;
+main,
+footer {
+  padding: 2rem;
+  margin: 5rem auto;
+  width: 85%;
 }
 
 /* footer styles */
-footer{
-    margin-bottom: 0;
+footer {
+  margin-bottom: 0;
 }
 
-h1{
-    font-size: 6rem;
-    margin-top: 15rem;
-    margin-bottom: -1rem;
-    font-family: var(--f2);
-    color: var(--c5);
+h1 {
+  font-size: 6rem;
+  margin-top: 15rem;
+  margin-bottom: -1rem;
+  font-family: var(--f2);
+  color: var(--c5);
 }
 
-h2{
-    margin: 5rem auto 2rem;
-    text-align: center;
-    font-size: 3rem;
-    position: relative;
-    color: var(--c5);
+h2 {
+  margin: 5rem auto 2rem;
+  text-align: center;
+  font-size: 3rem;
+  position: relative;
+  color: var(--c5);
 }
 
-h2::before, h2::after{
-    display: block;
-    content: " ";
-    width: 10rem;
-    height: 0.1rem;
-    background-color: var(--c4);
-    position: absolute;
-    top: 2rem;
+h2::before,
+h2::after {
+  display: block;
+  content: " ";
+  width: 10rem;
+  height: 0.1rem;
+  background-color: var(--c4);
+  position: absolute;
+  top: 2rem;
 }
 
-h2::before{
-    left: 20rem;
+h2::before {
+  left: 20rem;
 }
 
-h2::after{
-    right: 20rem;
+h2::after {
+  right: 20rem;
 }
 
 /* media queries */
-@media (max-width: 1024px)
-{
-    main, footer{
-        width: 70%;
-    }
+@media (max-width: 1450px) {
+  h2::before,
+  h2::after {
+    width: 8rem;
+  }
+
+  h2::before {
+    left: 10rem;
+  }
+
+  h2::after {
+    right: 10rem;
+  }
 }
 
-@media (max-width: 850px)
-{
-    main, footer{
-        width: 100%;
-    }
+@media (max-width: 1024px) {
+  main,
+  footer {
+    width: 70%;
+  }
+
+  h2::before,
+  h2::after {
+    width: 6rem;
+  }
+
+  h2::before {
+    left: 5rem;
+  }
+
+  h2::after {
+    right: 5rem;
+  }
+}
+
+@media (max-width: 850px) {
+  main,
+  footer {
+    width: 100%;
+  }
+}
+
+@media (max-width: 750px) {
+  h2::before,
+  h2::after {
+    display: none;
+  }
 }
