@@ -2,16 +2,14 @@ import * as React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import '../utils/font-awesome'
 import {
-    projects,
   projlist,
   proj,
   projlinks
 } from '../components/styles/layout.module.css'
 
-export default function Projects(){
+const Projects = ({ id }) =>{
     return (
-        <>
-        <section id={projects}>
+        <section id={ id }>
             <h2>Projects</h2>
                 
                 <div className={projlist}>
@@ -42,6 +40,7 @@ export default function Projects(){
                     </div>
                 </div>
             </section>
-        </>
     )
 }
+
+export default Projects
