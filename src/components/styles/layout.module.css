@@ -96,6 +96,11 @@ section a.button {
   display: block;
 }
 
+.paragraph{
+  margin: 2rem auto;
+  max-width: 1200px;
+}
+
 /* [footer]- connections */
 .connections {
   display: flex;
