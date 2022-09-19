@@ -7,10 +7,15 @@ import {
   projlinks
 } from '../components/styles/layout.module.css'
 import { projs } from './proj_data'
+import styled from 'styled-components'
+
+const Proj=styled.section`
+    padding-top: 10vh;
+`
 
 const Projects = ({ id }) =>{
     return (
-        <section id={ id }>
+        <Projs id={ id }>
             <h2>Projects</h2>
             <div className={ projlist }>
                 {
@@ -34,7 +39,7 @@ const Projects = ({ id }) =>{
                     })
                 }
             </div>
-        </section>
+        </Projs>
     )
 }
 
