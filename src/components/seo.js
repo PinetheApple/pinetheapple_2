@@ -44,3 +44,6 @@ export function Seo(props) {
     </Helmet>
   );
 }
+
+// gatsby-plugin-react-helmet: Gatsby now has built-in support for modyfing
+// the document head. Learn more at https://gatsby.dev/gatsby-head

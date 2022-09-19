@@ -12,7 +12,7 @@ const IndexPage = () => {
     <Layout title="Home Page" description="index page">
       <section className={hero}>
         <h1>Jonathan Paul</h1>
-        <p>STUDENT<span>WEB DEVELOPER</span></p>
+        <p>Student<span>Web Developer</span></p>
       </section>
       <section>wip site </section>
       <Projects id='projects'/>
