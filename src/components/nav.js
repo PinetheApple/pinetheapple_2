@@ -7,8 +7,9 @@ import {
     button,  
     ham, 
     active, 
-bar } from './styles/nav.module.css'
-import logo from '../images/logo.svg'
+    bar 
+} from './styles/nav.module.css'
+import logo from '../images/logo.png'
 import styled from "styled-components"
 
 const Pagelinks= styled.nav`
@@ -22,6 +23,17 @@ const Pagelinks= styled.nav`
     right: 0;
     background-color: var(--c2);
     z-index: 10;
+`
+
+const Logo=styled.div`
+    margin-left: 2rem;
+    padding: 1rem 0.5rem;
+    margin-bottom: -0.5rem;
+    box-sizing: content-box;
+
+    @media (max-width: 850px){
+        margin-left:0;
+    }
 `
 
 export default function Nav(){
@@ -38,18 +50,20 @@ export default function Nav(){
 
     return (
         <Pagelinks>
-            <img src={logo} alt='logo'/>
+            <Logo>
+                <a href='/'><img src={logo} alt='logo' height="36px" width="35px"/></a>
+            </Logo>
             <ul className={toggle? active_links : innerlinks} onClick={handleToggle} role='navigation'>
                 <li><Link to='/about' >About</Link></li>
                 <li><Link to='/about#experience'>Experience</Link></li>
                 <li><Link to='/#projects'>Projects</Link></li>
                 <li><Link to='/#contact'>Contact</Link></li>
-                <li><a href='/' className={button}>Resume</a></li>
+                <li><a href='https://www.dropbox.com/s/j7rq8jbu6dgkftg/pine_resume.pdf?dl=1' className={button} download="jonathan_resume">Resume</a></li>
             </ul>
-            <div class={toggle? active_ham:ham} onClick={handleToggle} role='navigation'>
-                <span class={bar}></span>
-                <span class={bar}></span>
-                <span class={bar}></span>
+            <div className={toggle? active_ham:ham} onClick={handleToggle} role='navigation'>
+                <span className={bar}></span>
+                <span className={bar}></span>
+                <span className={bar}></span>
             </div>
         </Pagelinks>
     )
