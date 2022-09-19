@@ -9,7 +9,7 @@ import {
 import { projs } from './proj_data'
 import styled from 'styled-components'
 
-const Proj=styled.section`
+const Projs=styled.section`
     padding-top: 10vh;
 `
 
