@@ -18,7 +18,7 @@ a.button:hover{
 .innerlinks{
     display: flex;
     gap: 3rem;
-}/* this is open when the screen is wider than 850px */
+}
 
 .bar{
     display: block;

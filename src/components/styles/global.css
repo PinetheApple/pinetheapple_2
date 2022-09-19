@@ -6,12 +6,11 @@
   --c4: #b0bcbf;
   --c5: #348990;
   --f1: "ABeeZee", sans-serif;
-  --f2: "monospace";
+  --f2: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
 * {
   box-sizing: border-box;
-  font-family: var(--f1);
 }
 
 ::-webkit-scrollbar {
@@ -33,6 +32,7 @@ body {
   margin: 0;
   padding: 0;
   background: var(--c2);
+  font-family: var(--f1);
   color: var(--c3);
 }
 
@@ -124,10 +124,10 @@ h2::after {
 }
 
 @media (max-width: 1024px) {
-  main,
+  /* main,
   footer {
     width: 70%;
-  }
+  } */
 
   h2::before,
   h2::after {
@@ -143,16 +143,51 @@ h2::after {
   }
 }
 
-@media (max-width: 850px) {
+/* @media (max-width: 850px) {
   main,
   footer {
     width: 100%;
   }
-}
+} */
 
-@media (max-width: 750px) {
+@media (max-width: 810px) {
   h2::before,
   h2::after {
     display: none;
   }
+
+  h1{
+    font-size: 5rem;
+    margin-top: 12rem;
+  }
 }
+
+@media (max-width: 650px){
+  h1{
+      font-size: 4rem;
+  }
+}
+
+@media (max-width: 520px){
+  h1{
+      font-size: 3.5rem;
+      margin-top: 10rem;
+  }
+}
+
+@media (max-width: 460px){
+main{
+    padding: 2rem 0;
+}
+
+h1{
+  font-size: 4rem;
+}
+}
+
+/* @media (max-width: 750px) {
+  h2::before,
+  h2::after {
+    display: none;
+  }
+} */

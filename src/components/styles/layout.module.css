@@ -57,6 +57,7 @@ a.button:hover {
   width: fit-content;
   margin: 0 auto;
   align-items: flex-end;
+  max-width: 100%;
 }
 
 .hero p {
@@ -72,7 +73,7 @@ a.button:hover {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  align-items: center;
+  align-items: stretch;
   gap: 2rem;
 }
 
@@ -80,15 +81,14 @@ a.button:hover {
   display: flex;
   justify-content: right;
   gap: 1rem;
-  margin: 1rem auto;
+  margin: 0 auto 1rem;
 }
 
 .proj {
   flex-basis: 35%;
-  height: 20rem;
   background-color: var(--c1);
   color: white;
-  padding: 1.5rem;
+  padding: 1.5rem 1.5rem 2rem;
 }
 
 /* contact button */
@@ -128,5 +128,19 @@ section a.button {
   .rightsection,
   .leftsection {
     display: none;
+  }
+}
+
+@media (max-width: 460px){
+  .proj{
+      flex-basis: 100%;
+  }
+
+  .hero{
+      display:block;
+  }
+
+  .hero p{
+      text-align: left;
   }
 }
