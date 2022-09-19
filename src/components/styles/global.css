@@ -124,11 +124,6 @@ h2::after {
 }
 
 @media (max-width: 1024px) {
-  /* main,
-  footer {
-    width: 70%;
-  } */
-
   h2::before,
   h2::after {
     width: 6rem;
@@ -142,13 +137,6 @@ h2::after {
     right: 5rem;
   }
 }
-
-/* @media (max-width: 850px) {
-  main,
-  footer {
-    width: 100%;
-  }
-} */
 
 @media (max-width: 810px) {
   h2::before,
@@ -176,18 +164,11 @@ h2::after {
 }
 
 @media (max-width: 460px){
-main{
-    padding: 2rem 0;
-}
-
-h1{
-  font-size: 4rem;
-}
-}
-
-/* @media (max-width: 750px) {
-  h2::before,
-  h2::after {
-    display: none;
+  main{
+      padding: 2rem 0;
   }
-} */
+
+  h1{
+    font-size: 4rem;
+  }
+}

@@ -14,7 +14,6 @@ const IndexPage = () => {
         <h1>Jonathan Paul</h1>
         <p>Student<span>Web Developer</span></p>
       </section>
-      <section>wip site </section>
       <Projects id='projects'/>
       <Contact id='contact'/>
     </Layout>

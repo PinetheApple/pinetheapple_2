@@ -10,8 +10,8 @@ import SideSections from './sidesections'
 import Footer from './footer'
 
 const Container=styled.div`
-font-family: var(--f1);
-    color: var(--c3);
+  font-family: var(--f1);
+  color: var(--c3);
 `
 
 const Layout = ({ 

@@ -1,12 +1,12 @@
 import * as React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import '../utils/font-awesome'
-import {connections, details} from './styles/layout.module.css'
+import { connections, details } from './styles/layout.module.css'
 
 export default function Footer(){
     return(
         <footer>
-        <section className={connections}>
+        <section className={ connections }>
           <a href="https://www.discord.gg/rqVKvVe" rel="noopener">
             <FontAwesomeIcon icon={['fab', 'discord']} size='xl' title='discord server link'/>
           </a>
@@ -21,14 +21,12 @@ export default function Footer(){
           </a>
         </section>
 
-        <section className={details}>
+        <section className={ details }>
           <p><a href="https://github.com/PinetheApple/pinetheapple_2" rel="noopener">
             Github repository</a>
           </p>
           <small>Ⓒ Jonathan. No rights reserved.</small>
         </section>
-
-        <h3>need to fix nav scrolling + add content + make site responsive</h3>
       </footer>
     )
 }
