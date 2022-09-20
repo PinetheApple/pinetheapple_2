@@ -38,7 +38,7 @@ const Contact = ({ id }) => {
         <section id={ id }>
             <h2>Contact</h2>
             <Paragraph>Always happy to hear about what you think of this site or any project you're interested in showing me. Feel free to email or DM on discord :) </Paragraph>
-            <a href="mail:to" className={button}>Email Me</a>
+            <a href="mailto:pinespace889@gmail.com" className={button}>Email Me</a>
         </section>
     )
 }
