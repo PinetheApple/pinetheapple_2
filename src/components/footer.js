@@ -7,16 +7,16 @@ export default function Footer(){
     return(
         <footer>
         <section className={ connections }>
-          <a href="https://www.discord.gg/rqVKvVe" rel="noopener">
+          <a href="https://www.discord.gg/rqVKvVe" target="_blank" rel="noreferrer noopener">
             <FontAwesomeIcon icon={['fab', 'discord']} size='xl' title='discord server link'/>
           </a>
-          <a href="https://github.com/PinetheApple" rel="noopener">
+          <a href="https://github.com/PinetheApple" target="_blank" rel="noreferrer noopener">
             <FontAwesomeIcon icon={['fab', 'github']} size='xl' title='github profile link' />
           </a>
-          <a href="https://codepen.io/pinetheapple" rel="noopener">
+          <a href="https://codepen.io/pinetheapple" target="_blank" rel="noreferrer noopener">
             <FontAwesomeIcon icon={['fab', 'codepen']} size='xl' title='codepen profile link' />
           </a>
-          <a href="https://fontawesome.com/" rel="noopener">
+          <a href="https://fontawesome.com/" target="_blank" rel="noreferrer noopener">
             <FontAwesomeIcon icon={['fab', 'font-awesome']} size='xl' title='fontawesome link' />
           </a>
         </section>

@@ -7,13 +7,13 @@ const  LeftSection =() => {
     return (
         <nav className={leftsection}>
             <ul>
-                <li><a href="https://www.discord.gg/rqVKvVe" rel="noopener">
+                <li><a href="https://www.discord.gg/rqVKvVe" target="_blank" rel="noreferrer noopener">
                     <FontAwesomeIcon icon={['fab', 'discord']} size='xl' title='discord server link'/>
                 </a></li>
-                <li><a href="https://github.com/PinetheApple" rel="noopener">
+                <li><a href="https://github.com/PinetheApple" target="_blank" rel="noreferrer noopener">
                     <FontAwesomeIcon icon={['fab', 'github']} size='xl' title='github profile link' />
                 </a></li>
-                <li><a href="https://codepen.io/pinetheapple" rel="noopener">
+                <li><a href="https://codepen.io/pinetheapple" target="_blank" rel="noreferrer noopener">
                     <FontAwesomeIcon icon={['fab', 'codepen']} size='xl' title='codepen profile link' />
                 </a></li>
                 <li><div className={line}></div></li>
