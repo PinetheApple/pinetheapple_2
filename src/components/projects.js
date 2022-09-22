@@ -65,9 +65,9 @@ const Projects = ({ id }) =>{
                         <Proj>
                             <ProjLinks>
                             {
-                                    project.links.map(link => {
+                                    project.links.map((link, index) => {
                                         return(
-                                            <a href={link.address} target="_blank" rel="noreferrer noopener"><FontAwesomeIcon icon={(link.label.startsWith('github'))? ['fab', 'github']:'up-right-from-square'} title={link.label} size='xl'/></a>
+                                            <a href={link.address} target="_blank" rel="noreferrer noopener" key={index}><FontAwesomeIcon icon={(link.label.startsWith('github'))? ['fab', 'github']:'up-right-from-square'} title={link.label} size='xl'/></a>
                                         )
                                     })
                             }
