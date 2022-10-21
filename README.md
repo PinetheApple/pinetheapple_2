@@ -4,7 +4,7 @@
 ---
 ## Using this repository
 Fork and clone the repository.
-#### Set Up
+### Set Up
 
 1. Install Node.js
 ```sh
@@ -21,7 +21,7 @@ npm install -g gatsby-cli
 npm install
 ```
 
-#### Running the server
+### Running the server
 
 - Starting a development server to see changes you make as you make them
 ```sh
