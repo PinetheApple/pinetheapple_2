@@ -107,17 +107,24 @@ const AboutPage = () => {
 					</p>
 					<p>
 						I'm currently pursuing a degree in Computer Science
-						while learning random stuff off the internet like web
-						development and computer networking.
+						while learning random stuff off the internet like
+						Ethical hacking and computer networking.
 					</p>
-					<p>I'm looking to collaborate on web-related projects.</p>
+					<p>
+						I'm looking to collaborate on cyber security related
+						projects.
+					</p>
 				</AboutSec>
 			</About>
 			<Experience id="experience">
 				<h2>Experience</h2>
 				<p>
-					Business Web Solutions- <span>Intern</span>
+					Business Web Solutions - <span>Web Development Intern</span>
 					<time> (3 months)</time>
+				</p>
+				<p>
+					Bosch India - <span> Student Trainee</span>
+					<time> (June 2023 - Present) </time>
 				</p>
 			</Experience>
 		</Layout>
